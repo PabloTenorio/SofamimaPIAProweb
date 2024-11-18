@@ -20,10 +20,10 @@
 <body>
     @include('partials.navdos')
 
-    <section class="box d-flex align-items-center justify-content-center">
+    <section class="d-flex align-items-center justify-content-center">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 margin-top">
                     <h1>CATÁLOGO</h1>
                 </div>
                 @foreach ($catalogo as $catalogo)

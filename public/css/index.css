@@ -7,6 +7,31 @@
     background-color: #141622;
 }
 
+.bienvenida{
+    color: white;
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bienvenida h1{
+    font-size: 7vh;
+    color: white;
+}
+
+.btn-slider-catalog{
+    background-color: transparent;
+    height: 10vh;
+    color: white;
+    border: 1px solid white;
+    margin: auto;
+}
+
 /* CAROUSEL */
 .imagenuno-mainslider{
     background: url('/images/diseno-interiores-marcos-fotos-comodo-sofa.jpg') center center/cover no-repeat;

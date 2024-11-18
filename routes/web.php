@@ -43,4 +43,9 @@ Route::get('/rol/edit/{id}', [App\Http\Controllers\RolController::class, 'edit']
 Route::post('/rol/update/{id}', [App\Http\Controllers\RolController::class, 'update'])->name('rol.update')->middleware('auth');
 Route::delete('/rol/destroy/{id}', [App\Http\Controllers\RolController::class, 'destroy'])->name('rol.destroy')->middleware('auth');
 
+/* CORREO */
+Route::get('/contacto', [App\Http\Controllers\CorreoController::class, 'contacto'])->name('correo.index');
+Route::post('/correo/store', [App\Http\Controllers\CorreoController::class, 'store'])->name('correo.store');
+Route::get('/correo/admin', [App\Http\Controllers\CorreoController::class, 'main'])->name('correo.main')->middleware('auth');
+
 Auth::routes();

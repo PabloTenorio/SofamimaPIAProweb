@@ -22,8 +22,22 @@
 </head>
 <body>
     @include('partials.nav')
+
     <!-- SLIDER -->
     <section class="box">
+      <div class="bienvenida">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-8">
+              <h1>Descubre el Confort y Estilo con Nuestra Exclusiva Colección de Sofás</h1>
+            </div>
+            <div class="col-12">
+              <p>Ve nuestras salas exclusivas y elige tu favorita.</p>
+              <a href="/catalogo"><button class="btn-slider-catalog">VISITA NUESTRO CATALOGO</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -53,18 +67,18 @@
           <div class="row">
             <div class="col-12 d-flex align-items-center justify-conte-center">
               <div class="parallax-imguno">
-                <a href=""><button class="btn-parallax">Ver Salas</button></a>
+                <a href="/catalogo"><button class="btn-parallax">Ver Salas</button></a>
               </div>
             </div>
             <div class="col-12">
               <div class="parallax-imgdos">
-                <a href=""><button class="btn-parallax">Ver Comedores</button></a>
+                <a href="/catalogo"><button class="btn-parallax">Ver Comedores</button></a>
               </div>
             </div>
             </div>
             <div class="col-12">
               <div class="parallax-imgtres">
-                <a href=""><button class="btn-parallax">Ver Sillones</button></a>
+                <a href="/catalogo"><button class="btn-parallax">Ver Sillones</button></a>
               </div>
             </div>
             </div>
@@ -82,10 +96,10 @@
           <div class="col-3">
             <div class="hover-effect">
               <div class="card-tendencias position-relative">
-                <a href="">
+                <a href="/catalogo">
                   <img src="images/Gary.webp" alt="" class="img-fluid" draggable="false">
                 </a>
-                <a href="">
+                <a href="/catalogo">
                   <div class="btn-hidden">
                     <span class="text-uppercase fs-5 mt-3" style="color: white;">Gary</span>
                   </div>
@@ -96,10 +110,10 @@
           <div class="col-3">
             <div class="hover-effect">
               <div class="card-tendencias position-relative">
-                <a href="">
+                <a href="/catalogo">
                   <img src="images/Modulos.webp" alt="" class="img-fluid" draggable="false">
                 </a>
-                <a href="">
+                <a href="/catalogo">
                   <div class="btn-hidden">
                     <span class="text-uppercase fs-5 mt-3" style="color: white;">Modulos</span>
                   </div>
@@ -110,10 +124,10 @@
           <div class="col-3">
             <div class="hover-effect">
               <div class="card-tendencias position-relative">
-                <a href="">
+                <a href="/catalogo">
                   <img src="images/Toronto.webp" alt="" class="img-fluid" draggable="false">
                 </a>
-                <a href="">
+                <a href="/catalogo">
                   <div class="btn-hidden">
                     <span class="text-uppercase fs-5 mt-3" style="color: white;">Toronto</span>
                   </div>
@@ -124,10 +138,10 @@
           <div class="col-3">
             <div class="hover-effect">
               <div class="card-tendencias position-relative">
-                <a href="">
+                <a href="/catalogo">
                   <img src="images/Torreon.webp" alt="" class="img-fluid" draggable="false">
                 </a>
-                <a href="">
+                <a href="/catalogo">
                   <div class="btn-hidden">
                     <span class="text-uppercase fs-5 mt-3" style="color: white;">Torreon</span>
                   </div>
@@ -266,10 +280,10 @@
           <div class="col-3">
             <div class="hover-effect">
               <div class="card-tendencias position-relative">
-                <a href="">
+                <a href="/catalogo">
                   <img src="images/Set de mesas de marmol.webp" alt="" class="img-fluid" draggable="false">
                 </a>
-                <a href="">
+                <a href="/catalogo">
                   <div class="btn-hidden">
                     <span class="text-uppercase fs-5 mt-3" style="color: white;">MESAS DE MARMOL</span>
                   </div>
@@ -280,10 +294,10 @@
           <div class="col-3">
             <div class="hover-effect">
               <div class="card-tendencias position-relative">
-                <a href="">
+                <a href="/catalogo">
                   <img src="images/Set Negro de mesas marmol.webp" alt="" class="img-fluid" draggable="false">
                 </a>
-                <a href="">
+                <a href="/catalogo">
                   <div class="btn-hidden">
                     <span class="text-uppercase fs-5 mt-3" style="color: white;">MESAS DE MARMOL</span>
                   </div>
@@ -294,10 +308,10 @@
           <div class="col-3">
             <div class="hover-effect">
               <div class="card-tendencias position-relative">
-                <a href="">
+                <a href="/catalogo">
                   <img src="images/Sillon.webp" alt="" class="img-fluid" draggable="false">
                 </a>
-                <a href="">
+                <a href="/catalogo">
                   <div class="btn-hidden">
                     <span class="text-uppercase fs-5 mt-3" style="color: white;">SILLON</span>
                   </div>
@@ -308,10 +322,10 @@
           <div class="col-3">
             <div class="hover-effect">
               <div class="card-tendencias position-relative">
-                <a href="">
+                <a href="/catalogo">
                   <img src="images/Recamara.webp" alt="" class="img-fluid" draggable="false">
                 </a>
-                <a href="">
+                <a href="/catalogo">
                   <div class="btn-hidden">
                     <span class="text-uppercase fs-5 mt-3" style="color: white;">RECÁMARA</span>
                   </div>

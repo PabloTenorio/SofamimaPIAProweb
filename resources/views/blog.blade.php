@@ -20,10 +20,10 @@
 <body>
     @include('partials.navdos')
 
-    <section class="box d-flex align-items-center justify-content-center">
+    <section class="d-flex align-items-center justify-content-center">
         <div class="container">
             <div class="row text-center">
-                <div class="col-12">
+                <div class="col-12 margin-top">
                     <h1 class="blog">Blog</h1>
                 </div>
                 @foreach ($blog as $blog)
@@ -51,6 +51,5 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="js/nav.js"></script>
 
 </html>

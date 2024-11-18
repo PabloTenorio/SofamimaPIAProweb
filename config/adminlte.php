@@ -339,6 +339,11 @@ return [
             'icon' => 'icon fas fa-plus',
             'label_color' => 'success',
         ],
+        [
+            'text' => 'Contactos',
+            'url' => 'correo/admin',
+            'label_color' => 'success',
+        ],
     ],
 
 

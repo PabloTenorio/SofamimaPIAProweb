@@ -11,3 +11,7 @@
 .texto-blog{
     text-align: initial;
 }
+
+.margin-top{
+    margin-top: 15vh !important;
+}

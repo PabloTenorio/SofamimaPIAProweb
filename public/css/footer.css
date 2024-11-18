@@ -1,0 +1,63 @@
+.color-footer{
+    background-color: black;
+}
+
+.footer-descuento{
+    text-align: center;
+}
+
+.footer-descuento h1{
+    color: white;
+    margin-top: 5%;
+}
+
+.footer-descuento p{
+    color: white;
+    margin-bottom: 5%;
+}
+
+.info-footer{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.footer-menu{
+    color: white;
+}
+
+.footer-menu ul{
+    padding: 0;
+}
+
+.footer-menu p{
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item{
+    list-style: none;
+}
+
+.menu-item a{
+    color: gray;
+    text-decoration: none;
+}
+
+.social-media-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media-footer a{
+    color: white;
+    text-decoration: none;
+}

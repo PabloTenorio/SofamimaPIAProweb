@@ -30,7 +30,7 @@
                             <td>{{$notas->fecha}}</td>
                             <td>{{$notas->texto}}</td>
                             <td>
-                                <img src="{{asset('images/notas/' . $notas->imagen1)}}" alt="">
+                                <img class="w-100" src="{{asset('images/notas/' . $notas->imagen1)}}" alt="">
                             </td>
                             <td>
                                 <a href="{{route('blog.edit', $notas->id)}}" class="btn btn-primary">Editar</a>

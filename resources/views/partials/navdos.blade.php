@@ -2,7 +2,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-2">
-                <div id="img-nav" class="logo-sofa-nav"></div>
+                <a href="/">
+                    <div class="logo-sofa-white"></div>
+                </a>
             </div>
             <div class="col-8 d-flex align-items-center justify-content-end">
                 <div class="w-80">

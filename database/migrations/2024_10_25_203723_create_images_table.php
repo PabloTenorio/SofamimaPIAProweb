@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('productoid');
-            $table->foreign('productoid')->references('id')->on('catalogos');
+            $table->foreign('productoid')->references('id')->on('catalogos')->onDelete('cascade');
             $table->string('imagen');
             $table->timestamps();
         });

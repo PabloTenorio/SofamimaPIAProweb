@@ -15,8 +15,8 @@
         <input class="form-control" type="text" name="color">
         <label for="">categoría</label>
         <select class="form-control" name="categoria" id="">
+            <option value="" selected disabled>Selecciona una opción</option>
             @foreach ($categorias as $categoria)
-                <option value="" selected disabled>Selecciona una opción</option>
                 <option value="{{$categoria->id}}">{{$categoria->categoria}}</option>
             @endforeach
         </select>

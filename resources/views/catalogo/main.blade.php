@@ -36,7 +36,7 @@
                             <td>
                                 @if (isset($images[$catalogo->id]))
                                     @foreach ($images[$catalogo->id] as $imagen)
-                                        <img src="{{ asset('images/admin/' . $imagen) }}"><br>
+                                        <img class="w-100" src="{{ asset('images/admin/' . $imagen) }}"><br>
                                     @endforeach
                                 @else
                                     No Images

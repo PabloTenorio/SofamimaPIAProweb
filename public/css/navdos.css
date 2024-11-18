@@ -4,14 +4,6 @@
 }
 
 /* NAV */
-.transparent-color{
-    background-color: transparent;
-}
-
-.black-color{
-    background-color: black;
-}
-
 .main-nav{
     display: flex;
     align-items: center;
@@ -20,15 +12,12 @@
     z-index: 9999;
     width: 100%;
     transition: 1s;
-}
-
-.logo-sofa-nav{
-    background: url('/images/logosofamimanegro.svg')center center/contain no-repeat;
-    height: 10vh;
+    background-color: black;
 }
 
 .logo-sofa-white{
     background: url('/images/logosofamima.svg')center center/contain no-repeat;
+    height: 10vh;
 }
 
 .nav-menus{
@@ -42,10 +31,6 @@
 
 .nav-menus a{
     text-decoration: none;
-    color: black;
-}
-
-.white-color-a a{
     color: white;
 }
 
@@ -59,12 +44,8 @@
 }
 
 .social-media a{
-    color: black;
-    text-decoration: none;
-}
-
-.white-color-icon a{
     color: white;
+    text-decoration: none;
 }
 
 .social-media i{

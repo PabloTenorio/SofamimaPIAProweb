@@ -1,0 +1,32 @@
+.box{
+    width: 100%;
+    height: 100vh;
+}
+
+/* hover effect */
+.hover-effect .card-tendencias{
+    width: 100%;
+    overflow: hidden;
+}
+
+.hover-effect img{
+    transform: translateY(40px);
+    transition: transform 0.3s ease-out;
+}
+
+.hover-effect .btn-hidden{
+    transform: translateY(40px);
+    transition: transform 0.3s ease-out;
+}
+
+.hover-effect:hover img,
+.hover-effect:hover .btn-hidden {
+  transform: translateY(0);
+}
+
+.btn-hidden{
+    color: white;
+    background-color: black;
+    margin: 1%;
+    text-align: center;
+}

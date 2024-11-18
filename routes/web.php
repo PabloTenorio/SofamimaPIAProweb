@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\MainController::class, 'index']);
 Route::get('/blog', [App\Http\Controllers\MainController::class, 'blog']);
 Route::get('/catalogo', [App\Http\Controllers\MainController::class, 'catalogo']);
+Route::get('/sobrenosotros', [App\Http\Controllers\MainController::class, 'sobrenosotros']);
 Route::get('/admin', [App\Http\Controllers\MainController::class, 'admin'])->middleware('auth');
 Route::get('/admin/users', [App\Http\Controllers\MainController::class, 'users'])->middleware('auth');
 

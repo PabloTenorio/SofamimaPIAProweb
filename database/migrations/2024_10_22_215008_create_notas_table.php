@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreign('id_creador')->references('id')->on('users');
             $table->string('titulo');
             $table->date('fecha');
-            $table->string('texto');
+            $table->text('texto');
             $table->string('imagen1');
             $table->timestamps();
         });

@@ -1,0 +1,68 @@
+/* OTROS */
+.box{
+    height: 100vh;
+    width: 100%;
+}
+
+.section-color{
+    background-color: #141622;
+}
+
+.sobrenosotros-box{
+    height: 65vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* RESEÑAS */
+.center {
+    margin: 0 auto;
+    width: 95%;
+    height: 50vh;
+}
+
+.testimonial-item p{
+    color: white;
+    font-size: x-large;
+    margin: 2%;
+}
+
+.testimonial-item{
+    color: white;
+}
+
+.slick-slide {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.slick-center {
+    transform: scale(1); /* Agranda la diapositiva central */
+    transition: transform 0.3s ease;
+}
+
+.titulo-reseñas h1{
+    color: white;
+    font-size: 7vh;
+    text-align: center;
+}
+
+.slick-prev{
+    background: url('/images/angulo-izquierdo-blanco.png')center center/contain no-repeat;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    right: 1vw;
+    position: relative;
+}
+
+.slick-next{
+    background: url('/images/angulo-derecho-blanco.png')center center/contain no-repeat;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    left: 1vw;
+    position: relative;
+}

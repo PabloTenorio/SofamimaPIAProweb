@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+.section-color{
+    background-color: #141622;
+}
+
+/* CAROUSEL */
 .imagenuno-mainslider{
     background: url('/images/diseno-interiores-marcos-fotos-comodo-sofa.jpg') center center/cover no-repeat;
     height: 100vh;
@@ -25,4 +30,155 @@
 
 .carousel-control-next-icon{
     background-image: url('/images/angulo-derecho.png') !important;
+}
+
+/* PARALLAX */
+.parallax-imguno{
+    background: url('/images/Salas.webp')center center/cover no-repeat;
+    height: 50vh;
+    width: 100%;
+    background-attachment: fixed;
+    margin-top: 5%;
+}
+
+.parallax-imgdos{
+    background: url('/images/Comedores.webp')center center/cover no-repeat;
+    height: 50vh;
+    width: 100%;
+    background-attachment: fixed;
+    margin-top: 5%;
+}
+
+.parallax-imgtres{
+    background: url('/images/Sillones.jpg')center center/cover no-repeat;
+    height: 50vh;
+    width: 100%;
+    background-attachment: fixed;
+    margin-top: 5%;
+}
+
+.btn-parallax{
+    background-color: #141622;
+    color: white;
+    border-radius: 30px;
+    position: relative;
+    width: 10vw;
+    height: 5vh;
+    top: 85%;
+    margin-left: 1%;
+}
+
+/* hover effect */
+.hover-effect .card-tendencias{
+    width: 100%;
+    overflow: hidden;
+}
+
+.hover-effect img{
+    transform: translateY(40px);
+    transition: transform 0.3s ease-out;
+}
+
+.hover-effect .btn-hidden{
+    transform: translateY(40px);
+    transition: transform 0.3s ease-out;
+}
+
+.hover-effect:hover img,
+.hover-effect:hover .btn-hidden {
+  transform: translateY(0);
+}
+
+.btn-hidden{
+    color: white;
+    background-color: black;
+    margin: 1%;
+    text-align: center;
+}
+
+/* Razones */
+.titulo-razon h1{
+    color: white;
+    font-size: 7vh;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.subtitulo-razon p{
+    color: white;
+    font-size: 2.5vh;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.razones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.razones img{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.razones p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 2vh;
+    text-align: center;
+}
+
+/* RESEÑAS */
+.center {
+    margin: 0 auto;
+    width: 95%;
+    height: 50vh;
+}
+
+.testimonial-item p{
+    color: white;
+    font-size: x-large;
+    margin: 2%;
+}
+
+.testimonial-item{
+    color: white;
+}
+
+.slick-slide {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.slick-center {
+    transform: scale(1); /* Agranda la diapositiva central */
+    transition: transform 0.3s ease;
+}
+
+.titulo-reseñas h1{
+    color: white;
+    font-size: 7vh;
+    text-align: center;
+}
+
+.slick-prev{
+    background: url('/images/angulo-izquierdo-blanco.png')center center/contain no-repeat;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    right: 1vw;
+    position: relative;
+}
+
+.slick-next{
+    background: url('/images/angulo-derecho-blanco.png')center center/contain no-repeat;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    left: 1vw;
+    position: relative;
 }

@@ -32,6 +32,14 @@
                             <td>
                                 <img src="{{asset('images/notas/' . $notas->imagen1)}}" alt="">
                             </td>
+                            <td>
+                                <a href="{{route('blog.edit', $notas->id)}}" class="btn btn-primary">Editar</a>
+                                <form action="{{route('blog.destroy', $notas->id)}}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input type="submit" value="Eliminar" class="btn btn-danger">
+                                </form>
+                            </td>
                         </tbody>
                     @endforeach
                 </table>

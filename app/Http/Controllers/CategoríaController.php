@@ -28,14 +28,24 @@ class CategoríaController extends Controller
     }
 
     public function edit($id) {
-
+        $categoria = categoria::find($id);
+        $data = [
+            'categoria'=>$categoria
+        ];
+        return view('categoria.edit', $data);
     }
 
     public function update(Request $request, $id) {
-
+        $categoria = categoria::find($id);
+        $categoria->id = $request->id;
+        $categoria->categoria = $request->categoria;
+        $categoria->save();
+        return redirect()->route('categoria.main');
     }
 
     public function destroy($id) {
-
+        $eliminar = categoria::find($id);
+        $eliminar->delete();
+        return redirect()->route('categoria.main');
     }
 }

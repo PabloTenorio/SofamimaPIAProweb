@@ -80,14 +80,52 @@ class CatalogoController extends Controller
     }
 
     public function edit($id) {
+        $catalogo = catalogo::find($id);
+        $categoria = categoria::all();
+        $images = images::all();
 
+        $data = [
+            'catalogo'=>$catalogo,
+            'categoria'=>$categoria,
+            'images'=>$images
+        ];
+
+        return view('catalogo.edit', $data);
     }
 
     public function update(Request $request, $id) {
+        $producto = catalogo::find($id);
+        $producto->id = $request->id;
+        $producto->name = $request->name;
+        $producto->color = $request->color;
+        $producto->categoria = $request->categoria;
+        $producto->material = $request->material;
+        $producto->descripción = $request->descripción;
 
+        if (auth()->check()) {
+            $producto->id_creador = auth()->user()->id;
+        }
+        
+        $producto->save();
+
+        if($request->hasFile('imagen')) {
+            foreach ($request->file('imagen') as $imagen) {
+                $filename = time() . '.' . $imagen->getClientOriginalName();
+                $imagen->move(public_path('images/admin'), $filename);
+    
+                $imagenes = new images();
+                $imagenes->productoid = $producto->id;
+                $imagenes->imagen = $filename;
+                $imagenes->save();
+            }
+        }
+
+        return redirect()->route('catalogo.main');
     }
 
     public function destroy($id) {
-
+        $eliminar = catalogo::find($id);
+        $eliminar->delete();
+        return redirect()->route('catalogo.main');
     }
 }

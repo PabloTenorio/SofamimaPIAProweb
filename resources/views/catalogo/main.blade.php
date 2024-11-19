@@ -42,6 +42,14 @@
                                     No Images
                                 @endif
                             </td>
+                            <td>
+                                <a href="{{route('catalogo.edit', $catalogo->id)}}" class="btn btn-primary">Editar</a>
+                                <form action="{{route('catalogo.destroy', $catalogo->id)}}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input type="submit" value="Eliminar" class="btn btn-danger">
+                                </form>
+                            </td>
                         </tbody>
                     @endforeach
                 </table>

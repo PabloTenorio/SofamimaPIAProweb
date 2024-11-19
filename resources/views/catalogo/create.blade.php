@@ -1,35 +1,37 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'Admin | Catalogo')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Catalogo</h1>
 @stop
 
 @section('content')
     <form action="{{route('catalogo.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <label for="">Nombre</label>
-        <input type="text" name="name">
+        <input class="form-control" type="text" name="name">
         <label for="">color</label>
-        <input type="text" name="color">
+        <input class="form-control" type="text" name="color">
         <label for="">categoría</label>
-        <select name="categoria" id="">
+        <select class="form-control" name="categoria" id="">
             @foreach ($categorias as $categoria)
                 <option value="" selected disabled>Selecciona una opción</option>
                 <option value="{{$categoria->id}}">{{$categoria->categoria}}</option>
             @endforeach
         </select>
         <label for="">material</label>
-        <input type="text" name="material">
+        <input class="form-control" type="text" name="material">
         <label for="">descripcion</label>
-        <input type="text" name="descripción">
+        <input class="form-control" type="text" name="descripción">
         <label for="">Imagen</label>
-        <input type="file" name="imagen[]" multiple>
+        <input class="form-control" type="file" name="imagen[]" multiple>
         <div id="contenedorinput"></div>
-        <input type="submit" value="Enviar">
+        <hr>
+        <input class="form-control btn btn-success" type="submit" value="Enviar">
     </form>
-    <button id="nuevaimg">Agregar mas imagenes</button>
+    <hr>
+    <button class="form-control btn btn-success" id="nuevaimg">Agregar mas imagenes</button>
 @stop
 
 @section('css')

@@ -10,14 +10,15 @@
     <form action="{{route('blog.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <label>Titulo</label>
-        <input type="text" name="titulo">
+        <input class="form-control" type="text" name="titulo">
         <label>Fecha</label>
-        <input type="date" name="fecha">
+        <input class="form-control" type="date" name="fecha">
         <label>Texto</label>
-        <input type="text" name="texto">
+        <input class="form-control" type="text" name="texto">
         <label>Imagen</label>
-        <input type="file" name="imagen1">
-        <input type="submit" value="Enviar">
+        <input class="form-control" type="file" name="imagen1">
+        <hr>
+        <input class="form-control btn btn-success" type="submit" value="Enviar">
     </form>
 @stop
 

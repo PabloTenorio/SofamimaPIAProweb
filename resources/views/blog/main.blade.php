@@ -1,19 +1,19 @@
 @extends('adminlte::page')
 
-@section('title', 'Admin | Catálogo')
+@section('title', 'Admin | Blog')
 
 @section('content_header')
-    <h1>Catálogo</h1>
+    <h1>Blog</h1>
 @stop
 
 @section('content')
     <hr>
-        <a href="{{route('blog.create')}}"><button type="button" class="btn btn-primary">Agregar una nueva categoría</button></a>
+        <a href="{{route('blog.create')}}"><button type="button" class="btn btn-primary">Crea una nueva nota</button></a>
     <hr>
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <table>
+                <table class="table text-center">
                     <thead>
                         <th>id</th>
                         <th>Creador</th>

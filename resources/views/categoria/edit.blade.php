@@ -9,9 +9,10 @@
 @section('content')
     <form action="{{route('categoria.update', $categoria->id)}}" method="POST">
         @csrf
-        <label>categoría</label>
-        <input type="text" name="categoria" value="{{$categoria->categoria}}">
-        <input type="submit" value="Enviar">
+        <label>Categoría</label>
+        <input class="form-control" type="text" name="categoria" value="{{$categoria->categoria}}">
+        <hr>
+        <input class="form-control btn btn-success" type="submit" value="Enviar">
     </form>
 @stop
 

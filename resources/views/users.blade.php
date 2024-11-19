@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <table>
+                <table class="table text-center">
                     <thead>
                         <th>id</th>
                         <th>Nombre</th>
@@ -21,7 +21,7 @@
                         <tbody>
                             <td>{{$users->id}}</td>
                             <td>{{$users->name}}</td>
-                            <td>{{$users->rol}}</td>
+                            <td>{{$users->roles}}</td>
                             <td>{{$users->email}}</td>
                         </tbody>
                     @endforeach

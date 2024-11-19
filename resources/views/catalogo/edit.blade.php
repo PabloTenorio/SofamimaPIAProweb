@@ -1,38 +1,39 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'Admin | Catalogo')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Catalogo</h1>
 @stop
 
 @section('content')
     <form action="{{route('catalogo.update', $catalogo->id)}}" method="POST" enctype="multipart/form-data">
         @csrf
         <label for="">Nombre</label>
-        <input type="text" name="name" value="{{$catalogo->name}}">
+        <input class="form-control" type="text" name="name" value="{{$catalogo->name}}">
         <label for="">Color</label>
-        <input type="text" name="color" value="{{$catalogo->color}}">
+        <input class="form-control" type="text" name="color" value="{{$catalogo->color}}">
         <label for="">Categoría</label>
-        <select name="categoria" id="">
+        <select class="form-control" name="categoria" id="">
             <option value="" selected disabled>Selecciona una opción</option>
             @foreach ($categoria as $categoria)
                 <option selected value="{{$categoria->id}}">{{$categoria->categoria}}</option>
             @endforeach
         </select>
         <label for="">Material</label>
-        <input type="text" name="material" value="{{$catalogo->material}}">
+        <input class="form-control" type="text" name="material" value="{{$catalogo->material}}">
         <label for="">Descripción</label>
-        <input type="text" name="descripción" value="{{$catalogo->descripción}}">
+        <input class="form-control" type="text" name="descripción" value="{{$catalogo->descripción}}">
         <label for="">Imagen</label>
         @foreach ($images as $images)
-            <img src="{{asset('images/admin/' . $images->imagen)}}" alt="">
-            <input type="hidden" name="imagen[]" multiple value="{{$images->imagen}}">
+            <br><img src="{{asset('images/admin/' . $images->imagen)}}" alt="">
+            <input class="form-control" type="hidden" name="imagen[]" multiple value="{{$images->imagen}}">
         @endforeach
         <div id="contenedorinput"></div>
-        <input type="submit" value="Enviar">
+        <input class="form-control btn btn-success" type="submit" value="Enviar">
     </form>
-    <button id="nuevaimg">Agregar mas imagenes</button>
+    <hr>
+    <button class="form-control btn btn-success" id="nuevaimg">Agregar mas imagenes</button>
 @stop
 
 @section('css')

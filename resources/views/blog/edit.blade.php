@@ -17,7 +17,8 @@
         <input class="form-control" type="text" name="texto" value="{{$blog->texto}}">
         <label>Imagen</label>
         <input class="form-control" type="file" name="imagen1" value="{{$blog->imagen1}}">
-        <input type="submit" value="Enviar">
+        <hr>
+        <input class="form-control btn btn-success" type="submit" value="Enviar">
     </form>
 @stop
 

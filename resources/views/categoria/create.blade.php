@@ -10,8 +10,9 @@
     <form action="{{route('categoria.store')}}" method="POST">
         @csrf
         <label>categoría</label>
-        <input type="text" name="categoria">
-        <input type="submit" value="Enviar">
+        <input class="form-control" type="text" name="categoria">
+        <hr>
+        <input class="form-control btn btn-success" type="submit" value="Enviar">
     </form>
 @stop
 

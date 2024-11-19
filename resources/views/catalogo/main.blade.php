@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <table>
+                <table class="table text-center">
                     <thead>
                         <th>id</th>
                         <th>Creador</th>

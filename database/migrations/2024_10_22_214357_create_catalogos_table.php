@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('catalogos', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('creador');
-            $table->foreign('creador')->references('id')->on('users');
+            $table->unsignedBigInteger('id_creador');
+            $table->foreign('id_creador')->references('id')->on('users');
             $table->string('name');
             $table->string('color');
             $table->unsignedBigInteger('categoria');

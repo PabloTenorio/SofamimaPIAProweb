@@ -329,7 +329,7 @@ return [
         ],
         [
             'text' => 'Blog',
-            'url' => '',
+            'url' => 'blog/admin',
             'icon' => 'icon fas fa-edit',
             'label_color' => 'success',
         ],

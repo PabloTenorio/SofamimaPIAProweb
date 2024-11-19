@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 9999;
     width: 100%;
     transition: 1s;
 }

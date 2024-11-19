@@ -1,0 +1,28 @@
+.box{
+    height: 100vh;
+    width: 100%;
+}
+
+.imagenuno-mainslider{
+    background: url('/images/diseno-interiores-marcos-fotos-comodo-sofa.jpg') center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.imagendos-mainslider{
+    background: url('/images/45c0ece3-a7d9-414a-a554-ece92f483646.jpg')center center/cover no-repeat;
+    height: 100vh;
+}
+
+.imagentres-mainslider{
+    background: url('/images/sofa-salon-espacio-copiar.jpg')center center/cover no-repeat;
+    height: 100vh;
+}
+
+.carousel-control-prev-icon{
+    background-image: url('/images/angulo-izquierdo.png') !important;
+}
+
+.carousel-control-next-icon{
+    background-image: url('/images/angulo-derecho.png') !important;
+}

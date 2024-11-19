@@ -11,6 +11,10 @@ class MainController extends Controller
         return view('index');
     }
 
+    public function blog(){
+        return view('blog');
+    }
+
     public function catalogo() {
         return view('catalogo');
     }

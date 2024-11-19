@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('notas', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('creador');
-            $table->foreign('creador')->references('id')->on('users');
+            $table->unsignedBigInteger('id_creador');
+            $table->foreign('id_creador')->references('id')->on('users');
             $table->string('titulo');
             $table->date('fecha');
             $table->string('texto');

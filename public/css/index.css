@@ -42,11 +42,21 @@
 .imagendos-mainslider{
     background: url('/images/45c0ece3-a7d9-414a-a554-ece92f483646.jpg')center center/cover no-repeat;
     height: 100vh;
+    width: 100%;
 }
 
 .imagentres-mainslider{
     background: url('/images/sofa-salon-espacio-copiar.jpg')center center/cover no-repeat;
     height: 100vh;
+    width: 100%;
+}
+
+.carousel-control-prev{
+    z-index: 9999 !important;
+}
+
+.carousel-control-next{
+    z-index: 9999 !important;
 }
 
 .carousel-control-prev-icon{

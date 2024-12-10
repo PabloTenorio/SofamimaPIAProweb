@@ -24,20 +24,20 @@
     @include('partials.nav')
 
     <!-- SLIDER -->
-    <section class="box">
-      <div class="bienvenida">
-        <div class="container-fluid">
-          <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-8">
-              <h1>Descubre el Confort y Estilo con Nuestra Exclusiva Colección de Sofás</h1>
-            </div>
-            <div class="col-12">
-              <p>Ve nuestras salas exclusivas y elige tu favorita.</p>
-              <a href="/catalogo"><button class="btn-slider-catalog">VISITA NUESTRO CATALOGO</button></a>
-            </div>
+    <div class="bienvenida">
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-8">
+            <h1>Descubre el Confort y Estilo con Nuestra Exclusiva Colección de Sofás</h1>
+          </div>
+          <div class="col-12">
+            <p>Ve nuestras salas exclusivas y elige tu favorita.</p>
+            <a href="/catalogo"><button class="btn-slider-catalog">VISITA NUESTRO CATALOGO</button></a>
           </div>
         </div>
       </div>
+    </div>
+    <section class="box">
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
